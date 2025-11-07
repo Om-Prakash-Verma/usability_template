@@ -103,7 +103,7 @@ ul {
     color: var(--accent-color);
 }
 
-.primary-button {
+.primary-btn {
     background-color: var(--accent-color);
     border: 6px;
     font-weight: 700;
@@ -111,13 +111,14 @@ ul {
     padding: 12px 24px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
+    border-radius: 6px;
 }
 
-.primary-button:hover {
+.primary-btn:hover {
     background-color: var(--secondary-text-color);
 }
 
-.secondary-button {
+.secondary-btn {
     border: 0.5px solid var(--secondary-text-color);
     border-radius: 6px;
     padding: 12px 24px;
@@ -126,12 +127,12 @@ ul {
     transition: 0.2s ease-out;
 }
 
-.secondary-button:hover {
+.secondary-btn:hover {
     border-color: var(--accent-color);
     color: var(--accent-color) !important;
 }
 
-/* end of navbar */
+/* header section */
 .section-gap {
     padding: 50px var(--padding-inline-section) 0;
 }
@@ -141,14 +142,13 @@ ul {
     flex-direction: column;
     gap: 10px;
     align-items: start;
-
 }
 
 .header-right img {
     width: 100%;
 }
 
-/* company section */
+/* Company section */
 .company-section h4 {
     text-align: center;
     color: var(--accent-color);
@@ -161,4 +161,46 @@ ul {
 
 .logos img {
     height: 46px;
+}
+
+/* feature section */
+.section-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.features-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.feature-card img {
+    width: 55px;
+}
+
+.feature-card p {
+    text-align: center;
+}
+
+/* big feature */
+.feature-img img {
+    width: 100%;
+}
+
+.feature-desc {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
 }
